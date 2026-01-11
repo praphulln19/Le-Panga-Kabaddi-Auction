@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Panga Kabaddi Season - 2 - Player Auction</title>
+    <meta name="description" content="Professional kabaddi auction system for Le-Panga Kabaddi tournament">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4.2" />
+    <script src="script.js?v=4.1" defer></script>
+</head>
+<body>
+    <!-- Kabaddi Arena Atmosphere -->
+    <div class="arena-particles"></div>
+    
+    <header class="site-header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="tournament-logo">🤼</div>
+                <div class="header-text">
+                    <h1>Le Panga Kabaddi Season - 2</h1>
+                    <p>Player Auction System</p>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="view-toggle">
+                    <button class="toggle-btn" id="gridBtn" aria-label="Grid view">
+                        <span class="btn-icon">⊞</span>
+                        <span class="btn-text">Grid</span>
+                    </button>
+                    <button class="toggle-btn active" id="detailedBtn" aria-label="Detailed view">
+                        <span class="btn-icon">⊡</span>
+                        <span class="btn-text">Detailed</span>
+                    </button>
+                    <button class="toggle-btn" id="dashboardBtn" aria-label="Dashboard view">
+                        <span class="btn-icon">📊</span>
+                        <span class="btn-text">Dashboard</span>
+                    </button>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="actions">
+                    <label for="uploadJson" class="action-btn upload-btn" aria-label="Upload auction state">
+                        <span class="btn-icon">📤</span>
+                        <span class="btn-text">Upload State</span>
+                    </label>
+                    <input type="file" id="uploadJson" accept=".json" hidden />
+                    <button class="action-btn" id="exportBtn" aria-label="Save auction state">
+                        <span class="btn-icon">💾</span>
+                        <span class="btn-text">Save State</span>
+                    </button>
+                    <button class="action-btn reset-btn" id="resetBtn" aria-label="Reset all auction data">
+                        <span class="btn-icon">🔄</span>
+                        <span class="btn-text">Reset All</span>
+                    </button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="app">
+        <div id="mainView" class="content-view"></div>
+        <div id="dashboardView" class="content-view dashboard-view" style="display: none;"></div>
+        
+        <div id="detailedNav" class="detailed-navigation" style="display: none;">
+            <button id="prevBtn" class="nav-btn" aria-label="Previous player">‹</button>
+            <span class="nav-counter" id="navCounter"></span>
+            <button id="nextBtn" class="nav-btn" aria-label="Next player">›</button>
+        </div>
+
+        <!-- Loading overlay -->
+        <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>Loading players...</p>
+        </div>
+
+        <!-- Toast notifications -->
+        <div id="toastContainer" class="toast-container"></div>
+    </main>
+</body>
+</html> 
