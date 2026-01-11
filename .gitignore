@@ -1,0 +1,6 @@
+# Player data - keep private
+kabaddi_players.json
+
+# Optional: Ignore all JSON files except package.json
+# *.json
+# !package.json
