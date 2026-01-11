@@ -14,7 +14,7 @@ A professional kabaddi player auction system for the Le-Panga Kabaddi tournament
 
 ### 🤼 Kabaddi Team Management
 - **6 Professional Teams**: Complete roster with authentic kabaddi team branding
-- **₹5,000 Budget**: Per team with real-time tracking and visual indicators
+- **₹10,000 Budget**: Per team with real-time tracking and visual indicators
 - **Player Limit**: 8 players maximum per team with automatic enforcement
 - **Team Status**: Dynamic budget tracking and player count displays
 - **Player Images**: Support for Google Drive images with fallback handling
@@ -76,12 +76,12 @@ Upload player data in JSON format:
 
 | Team | Icon | Full Name | Budget | Max Players |
 |------|------|-----------|---------|-------------|
-| UPY | 🏹 | UP Yodha | ₹5,000 | 8 |
-| TT | 👑 | Tamil Thalaivas | ₹5,000 | 8 |
-| BB | 🐂 | Bengaluru Bulls | ₹5,000 | 8 |
-| HS | ⚡ | Haryana Steelers | ₹5,000 | 8 |
-| PP | 🏴‍☠️ | Patna Pirates | ₹5,000 | 8 |
-| DD | 🛡️ | Dabang Delhi | ₹5,000 | 8 |
+| UPY | 🏹 | UP Yodha | ₹10,000 | 8 |
+| TT | 👑 | Tamil Thalaivas | ₹10,000 | 8 |
+| BB | 🐂 | Bengaluru Bulls | ₹10,000 | 8 |
+| HS | ⚡ | Haryana Steelers | ₹10,000 | 8 |
+| PP | 🏴‍☠️ | Patna Pirates | ₹10,000 | 8 |
+| DD | 🛡️ | Dabang Delhi | ₹10,000 | 8 |
 
 ## 🛠️ Technical Features
 
